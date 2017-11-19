@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+         apiKey: "AIzaSyBeI9nZRfOfPGYRm2jOUfOjgeV3L3d31Xw",
+         authDomain: "test-6d8be.firebaseapp.com",
+         databaseURL: "https://test-6d8be.firebaseio.com",
+         projectId: "test-6d8be",
+         storageBucket: "test-6d8be.appspot.com",
+         messagingSenderId: "809521618306"
+          };
+         firebase.initializeApp(config);
+      </script>
+    
+	<link rel='stylesheet' type="text/css" href="css/theme.css">
+	    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<!--	    <link rel="stylesheet" type="text/css" href="css/hover.css" />-->
+	   	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type = 'text/css'href = 'css/login.css'>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/login-navbar.js"></script>
+	    <script src="js/intense.js"></script>
+	    <script src="js/components.js"></script>
+	    <script src="js/jquery.fullPage.js"></script>
+	    <script src='js/loadingTathva.js'></script>
+    <script src="js/d-login.js"></script>
+    	    <link rel="stylesheet" type="text/css" href="css/make.css">
+    
+    <script src="js/login.js"></script>
+
+
+</head>
+<body>
+    
+  
+    
+<div id="top_bar">
+<a href = '../index.html' class = 'topbar-desktop'><span class="top_el" >Home</span></a>
+<span class="top_elm" ><a href = '../index.html'><i class="fa fa-home" aria-hidden="true"></i></a></span>
+<a href = '../events/index.html' class='topbar-desktop'><span class="top_el" >Events</span></a>
+<span class="top_elm" ><a href = '../events/index.html'><i class="fa fa-calendar" aria-hidden="true"></i></a></span>
+<a href = '../lectures/lectures.html'  class = 'topbar-desktop'><span class="top_el">Lectures</span></a>
+<span class="top_elm" ><a href = '#'><i class="fa fa-users" aria-hidden="true"></i></a></span>
+<a href = '#'  class = 'topbar-desktop'><span class="top_el">Workshops</span></a>
+<span class="top_elm" ><a href = '#'><i class="fa fa-cogs" aria-hidden="true"></i></a></span>
+    <a href = '#'  class = 'topbar-desktop'><span class="top_el">Nites</span></a>
+<span class="top_elm" ><a href = '#'><i class="fa fa-music" aria-hidden="true"></i></a></span>
+    <a href = '#'  class = 'topbar-desktop'><span class="top_el flipthis-highlight" >Adizya</span></a>
+<span class="top_elm flipthis-highlight" ><a href = '#'><i class="fa fa-paint-brush" aria-hidden="true"></i></a></span>
+    <a href = '../blitzkrieg/index.html'  class = 'topbar-desktop'><span class="top_el">Blitzkrieg</span></a>
+<span class="top_elm"><a href = '../blitzkrieg/index.html'><i class="fa fa-gamepad" aria-hidden="true"></i></a></span>
+       
+    <span class="top_el login-navbar" id = 'login-navbar'>Login</span><span class="top_el"><a href = '../signup/index.html' id = 'signup'>Sign Up</a></span>
+    
+    
+</div>
+        
+    
+
+    
+    
+    
+	<div class="device">
+        
+        
+            
+  <div id = 'login-wrapper'>
+<!--          Devu's login class inside-->
+         <div id="d-login-box" class="d-animate">
+    	    <img id="d-login-logo" src="images/tathva-man.png">
+            <div id="d-login-container-outer">
+                 <div id="d-login-container-inner">
+                    <div>
+                        <svg class="d-login-svg" id="d-login-username-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                        </svg>
+                        <input id="d-login-username" class="d-login-credentials" placeholder="Email"/>
+                    </div>
+                    <div>
+                        <svg class="d-login-svg" id="d-login-password-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+                        </svg>
+                        <input id="d-login-password" class="d-login-credentials" type="password" placeholder="Password"/>
+                    </div>  
+	             </div>
+               <input type='submit' value = 'login' id="d-login-button" class="d-button-green">
+                 <div id="d-login-password-reset">Forgot Password?</div>
+                 <div id="d-signup-container">Don't have an account? <a id="d-signup" href="">Sign Up</a></div>
+            </div>
+            <div id = "d-login-forget-container">
+                  <div>
+                        <svg class="d-login-svg" id="d-login-username-icon" viewBox="0 0 20 20">
+                             <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                        </svg>
+                        <input id="d-login-username" class="d-login-credentials" placeholder="Email"/>
+                 </div>
+                 <button id="d-login-reset-button" class="d-button-green">Reset</button>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+  <div class="f"></div>
+  <div class="g"></div>
+  <div class="h"></div>
+  <div class="i"></div>
+  <div class="j"></div>
+  <div class="k"></div>
+  <div class="l">
+	  <div class="apple">
+	  
+	  </div>
+	</div>
+	<div class="content">
+		<div id="fullpage">
+			<div class="section">
+				<div class="slide" id="slide_1">
+					<a href="event_rules/BID01.jpg"><div id="fifa15_rules">Rules And Regulations</div></a>
+				</div>
+				
+				<div class="slide" id="slide_3">
+					<a href="event_rules/BID03.jpg"><div id="nfs_rules">Rules and Regulations</div></a>
+				</div>
+				<div class="slide" id="slide_4">
+					<a href="event_rules/BID04.jpg"><div id="cs_rules">Rules and Regulations</div></a>
+				</div>
+                <div class="slide" id="slide_5">
+					<a href="event_rules/BID05.jpg"><div id="seige_rules">Rules and Regulations</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+    <script src="js/setboxshadow.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="../js/navbar-hide-on-login.js"></script>
+    <script src="js/backgroundchanger.js"></script>
+</body>
+</html>

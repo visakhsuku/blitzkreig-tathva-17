@@ -1,0 +1,243 @@
+body {
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+	width: 100vw;
+	height: 100vh;
+    
+}
+
+#d-login-box {    
+    position: relative;
+    z-index: 100001;
+    top: 103px;
+    left: -159px;
+    width: 252px;
+    height: 358px;
+	display: none;
+	margin: auto;
+	padding: 20px;
+    border-radius: 5px;
+	text-align: center;
+    background: rgba(121, 116, 122, 0.35);
+    transition: all ease-out 0.5s;
+}
+
+#d-login-box:hover {
+    background: rgba(121, 116, 122, 0.7);
+    box-shadow: 0px 2px 5px #fff;
+}
+
+#d-login-logo {
+    top: 10px;
+    height: 107px;
+    position: relative;
+}
+
+#d-login-container-outer {
+    position: relative;
+    top: 35px;
+}
+
+#d-login-container-inner {
+    text-align: left;
+}
+
+.d-login-credentials {
+	width: 100%;
+	margin: 12px 0 12px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #7abd69;     
+    font-family: "FontAwesome", 'Roboto', sans-serif;
+	padding: 5px 5px 5px 27px;
+	display: block;
+	border: none;    
+    opacity: 0.8;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.d-login-credentials:focus{
+    box-shadow: 0px 2px 5px #fff;
+    opacity: 1.0;
+    outline-color: transparent;
+}
+
+.d-login-credentials:hover {
+    box-shadow: 0px 2px 5px #fff;
+    opacity: 1.0;
+}
+
+.d-login-svg {
+    position: absolute;
+    z-index: 2;
+    width: 1rem;
+    height: 1rem;
+    left: 5px;
+}
+
+.d-login-svg path {
+  stroke: #7abd69;
+  fill: none;
+  stroke-width: 1;
+}
+
+
+#d-login-name path {
+  stroke-dasharray: 73.50196075439453;
+  stroke-dashoffset: 73.50196075439453;
+  -webkit-animation: animatePath 2s 0.5s forwards;
+          animation: animatePath 2s 0.5s forwards;
+}
+
+#d-login-password path {
+  stroke-dasharray: 92.10662841796875;
+  stroke-dashoffset: 92.10662841796875;
+  -webkit-animation: animatePath 2s 0.5s forwards;
+          animation: animatePath 2s 0.5s forwards;
+}
+
+#d-login-forget-container {
+    position: relative;
+    top: 43px;
+}
+
+#d-login-username-icon {
+    top: 5px;
+}
+
+#d-login-password-icon {
+    top: 45px;
+}
+
+#d-login-button {
+    transition: all ease-in-out 0.5s;
+    width: 80px;
+    margin-top: 21px;
+}
+
+#d-login-reset-button {
+    transition: all ease-in-out 0.5s;
+	width: 90px;
+    margin-top: 21px;
+}
+
+.d-button-green {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    font-weight: 500;
+    color: white;
+    background-color: #7abd69;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 14px;
+    transition: all ease-out 0.5s;
+}
+
+.d-button-green:focus {
+    box-shadow: 0px 2px 5px #fff;
+    background: #7dda65;
+    outline-color: transparent;
+}
+
+.d-button-green:hover {
+    box-shadow: 0px 2px 5px #fff;
+    background: #7dda65;
+}
+
+#d-login-password-reset {
+    color: white;
+    font-family: Roboto, sans serif;
+    font-size: 13px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+#d-signup-container {
+    color: white;
+    font-family: Roboto, sans serif;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#d-signup{
+    color: #ADFF2F;
+    text-decoration: none;
+}
+
+#d-login-back {
+    color: white;
+    font-family: Roboto, sans serif;
+    font-size: 13px;
+    margin-top: 12px;   
+    cursor: pointer; 
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #7abd69;
+}
+
+::selection {
+    color: white; 
+    background: #7abd69;
+}
+
+@-webkit-keyframes animatePath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes animatePath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.d-animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+    
+@keyframes animatezoomout{
+    from {transform: scale(1)}
+    ro {transform: scale(0)}
+}
+
+#login-wrapper {
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+ 
+@media only screen and (max-width: 768px) {
+    #login-wrapper {
+        z-index: -10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+    }   
+    #d-login-box{
+        position: relative;
+        top: 83px;
+            left: -25px;
+    }
+    
+}
+
+
